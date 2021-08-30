@@ -1,0 +1,27 @@
+{
+  "name": "@drozdik.m/uuid",
+  "version": "1.0.0",
+  "description": "Object for generating uuid",
+  "main": "dist/src/UUID.js",
+  "typings": "dist/src/UUID.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && tsc",
+    "test": "npm run build && node dist/tests/UUID.test.js"
+  },
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "UUID",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.5.0"
+  },
+  "dependencies": {}
+}

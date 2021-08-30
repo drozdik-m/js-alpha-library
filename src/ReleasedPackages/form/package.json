@@ -1,0 +1,38 @@
+{
+  "name": "@drozdik.m/form",
+  "version": "1.1.11",
+  "description": "Object for handling form and validation.",
+  "main": "dist/src/Form.js",
+  "typings": "dist/src/Form.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && npm run compile",
+    "compile": "sass --load-path=node_modules --load-path=../ module.scss dist/module.css && tsc",
+    "test": "npm run build && node dist/tests/Form/Form.test.js",
+    "demo": "npm run compile && browserify dist/demo/script.js -o dist/demo/script.compiled.js"
+  },
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Form",
+    "CommonForm",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.5.0",
+    "@drozdik.m/web-unit-test": "^1.2.5"
+  },
+  "dependencies": {
+    "@drozdik.m/common-mixins": "^1.0.5",
+    "@drozdik.m/event": "^1.0.0",
+    "@drozdik.m/map": "^2.0.0",
+    "@drozdik.m/px-in-rem": "^1.0.1",
+    "@drozdik.m/recaptcha": "^1.2.1",
+    "@drozdik.m/string-extensions": "^1.5.0"
+  }
+}

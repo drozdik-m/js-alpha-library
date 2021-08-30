@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Browser Test</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: dodgerblue
+        }
+
+        .block{
+            max-width: 60rem;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="../dist/module.css">
+</head>
+<body>
+
+    <h1>Menu</h1>
+
+    <div style="margin: 1rem;">
+
+        <div id="menu" class="menuWrapper desktopMenu">
+            <nav class="menu block">
+                <a href="/" title="Zpět na domovskou stránku" class="menuLogo">
+                    <img src="../src/images/menuLogo.jpg" />
+                    <span>Jméno webu</span>
+                </a>
+                <div class="hamburger" id="menuToggle">
+                    <span class="child1">&nbsp;</span>
+                    <span class="child2">&nbsp;</span>
+                    <span class="child3">&nbsp;</span>
+                    <span class="child4">&nbsp;</span>
+                </div>
+                <ul>
+                    <li><a href="#">Položka 1</a></li>
+                    <li><a href="#">Položka 2</a></li>
+                    <li><a href="#">Položka 3</a></li>
+                    <li><a href="#">Položka 4</a></li>
+                    <li><a href="#">Položka 5</a></li>
+                    <li><a href="#">Položka 6</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+    <script src="../dist/demo/script.compiled.js"></script>
+</body>
+</html>

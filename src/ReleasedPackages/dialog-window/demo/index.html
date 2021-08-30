@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Browser Test</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="../dist/module.css">
+</head>
+<body>
+    <h1>Dialog window</h1>
+
+    <button data-dialog-id="dialogWindow1">Open dialog window 1</button>
+    <button data-dialog-id="dialogWindow2">Open dialog window 2</button>
+
+    <div id="dialogWindow1">
+        <h2 class="dialogWindowHeading">Dialog window heading</h2>
+        <p>Oy chump! Dis iz a dialog window!</p>
+    </div>
+
+
+    <!--BIG DIALOG WINDOW-->
+    <div id="dialogWindow2">
+        <h2 class="dialogWindowHeading">Dialog window heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent id justo in neque elementum ultrices. Mauris dictum facilisis augue. Nulla quis diam. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris tincidunt sem sed arcu. Proin mattis lacinia justo. Nullam faucibus mi quis velit. Aliquam erat volutpat. Praesent vitae arcu tempor neque lacinia pretium.</p>
+        <p>Pellentesque pretium lectus id turpis. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Integer pellentesque quam vel velit. Pellentesque arcu. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Etiam commodo dui eget wisi. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Fusce wisi. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Nunc tincidunt ante vitae massa. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        <p>Fusce tellus. In rutrum. Nullam eget nisl. Nam quis nulla. Donec iaculis gravida nulla. Nunc dapibus tortor vel mi dapibus sollicitudin. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer in sapien. In enim a arcu imperdiet malesuada. Duis risus. Quisque porta. Suspendisse nisl. Duis condimentum augue id magna semper rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p>In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Curabitur sagittis hendrerit ante. Vivamus luctus egestas leo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nunc auctor. Integer tempor. Aenean placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Praesent dapibus. Aliquam id dolor. Proin mattis lacinia justo. Phasellus rhoncus. Maecenas aliquet accumsan leo. Donec iaculis gravida nulla.</p>
+        <p>Aliquam erat volutpat. Etiam neque. Phasellus et lorem id felis nonummy placerat. Nulla quis diam. Morbi scelerisque luctus velit. Nulla non arcu lacinia neque faucibus fringilla. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nullam rhoncus aliquam metus. In convallis. Nullam rhoncus aliquam metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit.</p>
+        <p>Testovací zpráva</p>
+        <div class="commonButtonWrapper">
+            <button class="commonButton dialogClose" disabled>Potvrdit</button>
+        </div>
+        <div class="commonButtonWrapper">
+            <button class="commonButton dialogClose">Potvrdit</button>
+        </div>
+        <div class="commonButtonWrapper">
+            <button class="commonButton commonButtonGreen dialogClose">Potvrdit</button>
+        </div>
+        <div class="commonButtonWrapper">
+            <button class="commonButton commonButtonYellow dialogClose">Potvrdit</button>
+        </div>
+        <div class="commonButtonWrapper">
+            <button class="commonButton commonButtonRed dialogClose">Potvrdit</button>
+        </div>
+        <div class="commonButtonWrapper">
+            <button class="commonButton dialogClose">Potvrdit</button>
+            <button class="commonButton commonButtonGreen dialogClose">Potvrdit</button>
+            <button class="commonButton commonButtonYellow dialogClose">Potvrdit</button>
+            <button class="commonButton commonButtonRed dialogClose">Potvrdit</button>
+        </div>
+    </div>
+
+    <script src="../dist/demo/script.compiled.js"></script>
+</body>
+</html>

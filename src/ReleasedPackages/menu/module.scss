@@ -1,0 +1,6 @@
+﻿@import "@drozdik.m/common-mixins/_module.scss";
+
+@include export("menu") {
+    @import "src/Menu.scss";
+    
+}

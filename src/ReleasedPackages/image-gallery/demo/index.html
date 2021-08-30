@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Browser Test</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: dodgerblue
+        }
+
+        .block{
+            max-width: 60rem;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="../dist/module.css">
+</head>
+<body>
+
+    <h1>Image Gallery</h1>
+
+    <div style="margin: 1rem;">
+
+        <h2>Images: </h2>
+        <ul id="demoImages1">
+            <li><a href="images/test1.jpg" title="Image 1">Image 1</a></li>
+            <li><a href="https://picsum.photos/2000/2000" title="Web image 1">Web image 1</a></li>
+            <li><a href="https://picsum.photos/2500/500" title="Web image 2">Web image 2</a></li>
+            <li><a href="https://picsum.photos/500/2500" title="Web image 3">Web image 3</a></li>
+            <li><a href="https://picsum.photos/5000/5000" title="Web image 4">Web image 4</a></li>
+            <li><a href="https://nowhere" title="404">404</a></li>
+            <li><a href="images/test2.jpg" title="Image 2">Image 2</a></li>
+            <li><a href="images/test3.jpg" title="Image 3">Image 3</a></li>
+            <li><a href="images/test4.png" title="Image 4">Image 4</a></li>
+            <li><a href="images/test5.jpg" title="Image 5">Image 5</a></li>
+            <li><a href="images/white.jpg" title="White">White</a></li>
+            <li><a href="images/test6.jpg" title="Image 6">Image 6</a></li>
+            <li><a href="images/fullhd1.jpg" title="Full HD image">Full hd 1</a></li>
+
+        </ul>
+
+        <ul id="demoImages2">
+            <li><a href="images/test1.jpg" title="Image 1">Image 1</a></li>
+        </ul>
+
+    </div>
+
+    <button id="fillingToggle">Filling toggle</button>
+    <div id="filling" style="background-color:aqua;">Filling</div>
+
+    
+
+    <script src="../dist/demo/script.compiled.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "name": "@drozdik.m/web-unit-test",
+  "version": "1.2.5",
+  "description": "More complex unit testing, capable of launching browser, running a test and the closing down after showing results into the terminal.",
+  "main": "dist/src/BrowserTest.js",
+  "typings": "dist/src/BrowserTest.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "compile": "tsc && sass browser/style.scss dist/browser/style.css",
+    "build": "npm update && npm update -D && npm run compile",
+    "test": "npm run build && node dist/tests/RunAndClose/RunAndClose.test.js && node dist/tests/MinorDOMChanges/MinorDOMChanges.test.js && node dist/tests/AsyncTest/AsyncTest.test.js",
+    "install": "npm install -g sass && npm install -g browserify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Testing",
+    "Test",
+    "Assert",
+    "UnitTest",
+    "Browser",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.0.12"
+  },
+  "dependencies": {
+    "@drozdik.m/unit-test": "^1.5.0"
+  }
+}

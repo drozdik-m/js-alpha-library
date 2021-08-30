@@ -1,0 +1,43 @@
+{
+  "name": "@drozdik.m/article-maker",
+  "version": "1.0.0",
+  "description": "Rich editor for articles.",
+  "main": "dist/src/ArticleMaker.js",
+  "typings": "dist/src/ArticleMaker.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "compile": "tsc",
+    "build": "npm update && npm update -D && npm run compile",
+    "test": "npm run build && node dist/tests/Basic/ArticleMaker.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "ArticleMaker",
+    "Rich",
+    "Editor",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.2.1",
+    "@drozdik.m/web-unit-test": "^1.0.0",
+    "@types/jquery": "^3.3.35"
+  },
+  "dependencies": {
+    "@drozdik.m/common-dialog-window": "^1.0.1",
+    "@drozdik.m/dialog-window": "^1.0.4",
+    "@drozdik.m/double-linked-list": "^1.1.0",
+    "@drozdik.m/event": "^1.0.0",
+    "@drozdik.m/map": "^2.0.0",
+    "@drozdik.m/pair": "^1.1.0",
+    "@drozdik.m/stack": "^1.0.1",
+    "@drozdik.m/string-extensions": "^1.5.0",
+    "@drozdik.m/uuid": "^1.0.0",
+    "jquery": "^3.5.0"
+  }
+}

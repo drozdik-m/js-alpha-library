@@ -1,0 +1,6 @@
+﻿
+
+@mixin webkit-autofill($backgroundColor, $color) {
+    -webkit-box-shadow: 0 0 0 30px $backgroundColor inset;
+    -webkit-text-fill-color: $color !important;
+}

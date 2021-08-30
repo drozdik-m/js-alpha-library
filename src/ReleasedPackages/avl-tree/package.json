@@ -1,0 +1,30 @@
+{
+  "name": "@drozdik.m/avl-tree",
+  "version": "1.0.0",
+  "description": "Classic implementation of AVL tree with improvements like efficient search of nth item and iterator.",
+  "main": "dist/src/AVLTree.js",
+  "typings": "dist/src/AVLTree.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && tsc",
+    "test": "npm run build && node dist/tests/AVLTree.test.js"
+  },
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "AVLTree",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "dependencies": {
+    "@drozdik.m/common-interfaces": "^1.0.2",
+    "@drozdik.m/comparator-handler": "^1.0.1"
+  },
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.5.0"
+  }
+}

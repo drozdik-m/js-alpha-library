@@ -1,0 +1,40 @@
+{
+  "name": "@drozdik.m/image-gallery",
+  "version": "1.2.3",
+  "description": "Efficient native modal image gallery.",
+  "main": "dist/src/ImageGallery.js",
+  "typings": "dist/src/ImageGallery.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && npm run compile",
+    "compile": "sass --load-path=node_modules --load-path=../ module.scss dist/module.css && tsc",
+    "test": "npm run build && node dist/tests/ImageGallery/ImageGallery.test.js",
+    "demo": "npm run compile && browserify dist/demo/script.js -o dist/demo/script.compiled.js"
+  },
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Gallery",
+    "Image",
+    "ImageGallery",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.5.0",
+    "@drozdik.m/web-unit-test": "^1.2.5"
+  },
+  "dependencies": {
+    "@drozdik.m/common-mixins": "^1.0.5",
+    "@drozdik.m/dimensions-helper": "^1.0.0",
+    "@drozdik.m/event": "^1.0.0",
+    "@drozdik.m/loading-animation": "^1.2.1",
+    "@drozdik.m/px-in-rem": "^1.0.1",
+    "@drozdik.m/rem": "^1.0.0",
+    "@drozdik.m/window-events": "^1.1.2"
+  }
+}

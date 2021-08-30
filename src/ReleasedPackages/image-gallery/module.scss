@@ -1,0 +1,8 @@
+﻿@import "@drozdik.m/common-mixins/_module.scss";
+
+@include export("image-gallery") {
+    @import "src/ImageGallery.scss";
+    @import "@drozdik.m/loading-animation/module.scss";
+}
+
+

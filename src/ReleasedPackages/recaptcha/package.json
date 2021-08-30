@@ -1,0 +1,35 @@
+{
+  "name": "@drozdik.m/recaptcha",
+  "version": "1.2.1",
+  "description": "Intuitive and easy way to use Recaptcha",
+  "main": "dist/src/RecaptchaV2.js",
+  "typings": "dist/src/RecaptchaV2.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && npm run compile",
+    "compile": "tsc",
+    "test": "npm run build && node dist/tests/RecaptchaV2/RecaptchaV2.test.js",
+    "demo": "npm run compile && browserify dist/demo/script.js -o dist/demo/script.compiled.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Recaptcha",
+    "RecaptchaV2",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.5.0",
+    "@drozdik.m/web-unit-test": "^1.2.5"
+  },
+  "dependencies": {
+    "@drozdik.m/common-interfaces": "^1.2.1",
+    "@drozdik.m/event": "^1.0.0",
+    "@drozdik.m/pipeline": "^1.2.2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@drozdik.m/binomial-heap",
+  "version": "1.0.0",
+  "description": "General implementation of maximum and minimum binomial heap.",
+  "main": "dist/src/MinMaxBinomialHeap.js",
+  "typings": "dist/src/MinMaxBinomialHeap.d.ts",
+  "scripts": {
+    "test": "node dist/tests/.js"
+  },
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT"
+}

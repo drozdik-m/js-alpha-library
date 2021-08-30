@@ -1,0 +1,12 @@
+{
+  "name": "@drozdik.m/binary-heap",
+  "version": "1.0.0",
+  "description": "General implementation of maximum and minimum binary heap.",
+  "main": "dist/src/MinMaxBinaryHeap.js",
+  "typings": "dist/src/MinMaxBinaryHeap.d.ts",
+  "scripts": {
+    "test": "node dist/tests/BinaryHeap_tests.js"
+  },
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT"
+}

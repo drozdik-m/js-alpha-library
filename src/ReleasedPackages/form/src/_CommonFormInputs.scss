@@ -1,0 +1,8 @@
+﻿
+@mixin CommonFormInputs() {
+    .commonForm {
+        select, textarea, [type="text"], [type="number"], [type="file"] {
+            @content;
+        }
+    }
+}

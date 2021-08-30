@@ -1,0 +1,26 @@
+{
+  "name": "@drozdik.m/unit-test",
+  "version": "1.5.0",
+  "description": "Unit test with test cases with Assert functions. Simple and easy.",
+  "main": "dist/src/UnitTest.js",
+  "typings": "dist/src/UnitTest.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && tsc",
+    "test": "npm run build && node dist/tests/UnitTestSync.test.js && node dist/tests/UnitTestAsync.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Testing",
+    "Test",
+    "Assert",
+    "UnitTest",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT"
+}

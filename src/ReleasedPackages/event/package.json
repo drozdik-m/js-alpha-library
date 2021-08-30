@@ -1,0 +1,31 @@
+{
+  "name": "@drozdik.m/event",
+  "version": "1.0.0",
+  "description": "Object for handling events.",
+  "main": "dist/src/Event.js",
+  "typings": "dist/src/Event.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && tsc",
+    "test": "npm run build && node dist/tests/Event.test.js"
+  },
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Event",
+    "Callback",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.0.1"
+  },
+  "dependencies": {
+    "@drozdik.m/common-interfaces": "^1.0.2",
+    "@drozdik.m/double-linked-list": "^1.0.2"
+  }
+}

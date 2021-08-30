@@ -1,0 +1,34 @@
+{
+  "name": "@drozdik.m/youtube",
+  "version": "1.1.0",
+  "description": "Very easy and intuitive YouTube iframe player",
+  "main": "dist/src/YoutubePlayer.js",
+  "typings": "dist/src/YoutubePlayer.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && tsc",
+    "test": "npm run build && node dist/tests/YoutubePlayer/YoutubePlayer.test.js",
+    "demo": "browserify dist/demo/script.js -o dist/demo/script.compiled.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "YouTube",
+    "Video",
+    "Player",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "dependencies": {
+    "@drozdik.m/event": "^1.0.0",
+    "@drozdik.m/pipeline": "^1.2.2"
+  },
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.5.0",
+    "@drozdik.m/web-unit-test": "^1.2.5"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@drozdik.m/primitive-container",
+  "version": "1.0.1",
+  "description": "Container for passing primitive data types by reference (inside the container).",
+  "main": "dist/src/PrimitiveContainer.js",
+  "typings": "dist/src/PrimitiveContainer.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && tsc ",
+    "test": "npm run build && node dist/tests/PrimitiveContainer.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Container",
+    "Reference",
+    "Primitive",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.0.1"
+  },
+  "dependencies": {
+    "@drozdik.m/common-interfaces": "^1.0.1"
+  }
+}

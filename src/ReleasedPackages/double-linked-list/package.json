@@ -1,0 +1,31 @@
+{
+  "name": "@drozdik.m/double-linked-list",
+  "version": "1.1.0",
+  "description": "Classic implementation of a iterable double linked list.",
+  "main": "dist/src/List.js",
+  "typings": "dist/src/List.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && tsc",
+    "test": "npm run build && node dist/tests/List.test.js"
+  },
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "LinkedList",
+    "DoubleLinkedList",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "dependencies": {
+    "@drozdik.m/common-interfaces": "^1.0.2",
+    "@drozdik.m/comparator-handler": "^1.0.1"
+  },
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.5.0"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@drozdik.m/google-analytics",
+  "version": "1.0.1",
+  "description": "Package for easy handling Google Analytics",
+  "main": "dist/src/GoogleAnalytics.js",
+  "typings": "dist/src/GoogleAnalytics.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm install && npm run compile",
+    "compile": "tsc",
+    "test": "npm run build",
+    "demo": "npm run compile && browserify dist/demo/script.js -o dist/demo/script.compiled.js"
+  },
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "GoogleAnalytics",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "dependencies": {
+    "@drozdik.m/pipeline": "^1.2.2"
+  },
+  "devDependencies": {
+    "webpack": "^4.43.0"
+  }
+}

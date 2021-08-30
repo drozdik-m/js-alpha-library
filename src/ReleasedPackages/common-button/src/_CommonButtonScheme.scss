@@ -1,0 +1,10 @@
+﻿@mixin commonButtonScheme ($color, $background-color, $colorHover: $background-color, $background-colorHover: $color) {
+    color: $color;
+    background-color: $background-color;
+    border: 0.125rem solid $background-color;
+
+    &:hover, &:active {
+        color: $colorHover;
+        background-color: $background-colorHover;
+    }
+}

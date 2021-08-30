@@ -1,0 +1,32 @@
+{
+  "name": "@drozdik.m/element-resize-watcher",
+  "version": "1.0.1",
+  "description": "Watcher calls event callback when the elements dimensions has changed",
+  "main": "dist/src/ElementResizeWatcher.js",
+  "typings": "dist/src/ElementResizeWatcher.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && tsc",
+    "test": "npm run build && node dist/tests/ElementResizeWatcher/ElementResizeWatcher.test.js"
+  },
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Resize",
+    "Watcher",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.5.0",
+    "@drozdik.m/web-unit-test": "^1.2.4"
+  },
+  "dependencies": {
+    "@drozdik.m/dimensions-helper": "^1.0.0",
+    "@drozdik.m/window-events": "^1.1.1"
+  }
+}

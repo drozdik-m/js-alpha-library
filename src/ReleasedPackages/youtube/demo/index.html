@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Browser Test</title>
+    
+</head>
+<body>
+
+    <!--HEADING-->
+    <h1 class="testH1">Youtube Player</h1>
+
+
+    <!--YOUTUBE PLAYER CONTROLS-->
+    <div class="controls testBlock">
+        <h2 class="testH2">Youtube Player</h2>
+        <div class="controlsGroup">
+            <h3 class="testH3">YoutubePlayer.Load(videoId:string)</h3>
+            <p>Loads a video into the iframe</p>
+            <input type="text" id="loadAVideoById" placeholder="knfrxj0T5NY" value="knfrxj0T5NY">
+            <input type="button" id="loadAVideoByIdButton" value="Execute" />
+        </div>
+        <div class="controlsGroup">
+            <h3 class="testH3">YoutubePlayer.Play()</h3>
+            <p>Resumes a paused video</p>
+            <input type="button" id="playAVideo" value="Execute" />
+        </div>
+        <div class="controlsGroup">
+            <h3 class="testH3">YoutubePlayer.Stop()</h3>
+            <p>Stops a video</p>
+            <input type="button" id="stopAVideo" value="Execute" />
+        </div>
+        <div class="controlsGroup">
+            <h3 class="testH3">YoutubePlayer.Pause()</h3>
+            <p>Pauses a video</p>
+            <input type="button" id="pauseAVideo" value="Execute" />
+        </div>
+        <div class="controlsGroup">
+            <h3 class="testH3">YoutubePlayer.SeekTo(sec: number)</h3>
+            <p>Seeks to a second</p>
+            <input type="number" id="seekToValue" value="0" />
+            <input type="button" id="seekTo" value="Execute" />
+        </div>
+    </div>
+
+    <!--TESTING ELEMENTS-->
+    <div class="center">
+        <div id="youtubePlayerTest1"></div>
+        <div id="youtubePlayerTest2"></div>
+    </div>
+
+
+    <script src="../dist/demo/script.compiled.js"></script>
+</body>
+</html>

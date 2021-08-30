@@ -1,0 +1,114 @@
+﻿@import "@drozdik.m/common-mixins/_module.scss";
+@import "@drozdik.m/px-in-rem/_module.scss";
+@import "@drozdik.m/common-button/src/_CommonButtonScheme.scss";
+@import "@drozdik.m/dialog-window/module.scss";
+
+//$mainTheme: #537bc3 !default;
+//$mainThemeHover: #3e5c91 !default;
+
+$transition: 250ms cubic-bezier(0.215, 0.61, 0.355, 1) !default;
+
+$commonGreen: #0a7b12 !default;
+$commonGreenHover: #09470d !default;
+
+$commonYellow: #f1c817 !default;
+$commonYellowHover: #aaa100 !default;
+
+$commonRed: #b00606 !default;
+$commonRedHover: #6b0505 !default;
+
+$commonGrey: #212121 !default;
+$commonGreyHover: #060606 !default;
+
+
+//--------------------------------------------------
+//---------COMMON DIALOG WINDOW---------------------
+//--------------------------------------------------
+.dialogWindow {
+    //COMMON DIALOG WINDOWS
+    .commonDialogWindowContent {
+        .dialogWindowHeading {
+            font-size: $pxInRem-22;
+            color: $commonGrey;
+            margin-bottom: $pxInRem-12;
+        }
+
+        .message {
+            color: black;
+            margin-bottom: $pxInRem-16;
+
+            a {
+                color: blue;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        @import "../node_modules/@drozdik.m/common-button/module.scss";
+
+        .commonButton {
+            &.commonButtonGreen {
+                @include commonButtonScheme(white, $commonGreen, white, $commonGreenHover);
+            }
+
+            &.commonButtonRed {
+                @include commonButtonScheme(white, $commonRed, white, $commonRedHover);
+            }
+
+            &.commonButtonYellow {
+                @include commonButtonScheme(white, $commonYellow, white, $commonYellowHover);
+            }
+
+            &.commonButtonGrey {
+                @include commonButtonScheme(white, $commonGrey, white, $commonGreyHover);
+            }
+        }
+        //SUCCESS
+        &#dialogSuccess, &#dialogGreenConfirmation {
+            &.dialogContent {
+                .dialogWindowHeading {
+                }
+
+                .message {
+                    color: $commonGreen;
+                }
+            }
+        }
+        //WARNING
+        &#dialogWarning, &#dialogYellowConfirmation {
+            &.dialogContent {
+                .dialogWindowHeading {
+                }
+
+                .message {
+                    color: $commonYellow;
+                }
+            }
+        }
+        //ERROR
+        &#dialogError, &#dialogRedConfirmation {
+            &.dialogContent {
+                .dialogWindowHeading {
+                }
+
+                .message {
+                    color: $commonRed;
+                }
+            }
+        }
+        //INFO
+        &#dialogInfo, &#dialogGreyConfirmation {
+            &.dialogContent {
+                .dialogWindowHeading {
+                }
+
+                .message {
+                    color: $commonGrey;
+                }
+            }
+        }
+    }
+}
+

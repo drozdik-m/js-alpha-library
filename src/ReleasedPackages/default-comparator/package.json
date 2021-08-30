@@ -1,0 +1,28 @@
+{
+  "name": "@drozdik.m/default-comparator",
+  "version": "1.0.1",
+  "description": "Default comparator that can compare primitive JavaScript types.",
+  "main": "dist/src/DefaultComparator.js",
+  "typings": "dist/src/DefaultComparator.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && tsc",
+    "test": "npm run build && node dist/tests/DefaultComparator.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Comparator",
+    "Default",
+    "Primitive",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.0.1"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@drozdik.m/fibonacci-heap",
+  "version": "1.0.0",
+  "description": "Classic implementation of Fibonacci heap.",
+  "main": "dist/src/MinMaxFibonacciHeap.js",
+  "typings": "dist/src/MinMaxFibonacciHeap.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && tsc",
+    "test": "npm run build && node dist/tests/FibonacciTree.test.js && node dist/tests/FibonacciHeap.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Heap",
+    "FibonnaciHeap",
+    "PriorityQueue",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.0.1"
+  },
+  "dependencies": {
+    "@drozdik.m/common-interfaces": "^1.0.2",
+    "@drozdik.m/comparator-handler": "^1.0.1"
+  }
+}

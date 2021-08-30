@@ -1,0 +1,110 @@
+﻿@import "@drozdik.m/common-mixins/_module.scss";
+@import "@drozdik.m/px-in-rem/_module.scss";
+
+$mainTheme: #537bc3 !default;
+$mainThemeHover: #3e5c91 !default;
+
+$transition: 250ms cubic-bezier(0.215, 0.61, 0.355, 1) !default;
+
+$cookiesBarHeight: $pxInRem-43 !default;
+$cookiesBackgroundColor: #181818 !default;
+$cookiesTextColor: white !default;
+$cookiesButtonBackgroundColor: $mainTheme !default;
+$cookiesButtonBackgroundHoverColor: $mainThemeHover !default;
+
+.cookiesBar {
+    min-height: $cookiesBarHeight;
+    background-color: $cookiesBackgroundColor;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    @include transition(opacity $transition, bottom $transition);
+
+    .cookiesBarInner {
+        p, a, button {
+            color: $cookiesTextColor;
+            font-size: $pxInRem-16;
+        }
+
+        .cookiesBarText, .cookiesBarButton {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .cookiesBarText {
+            padding: $pxInRem-5 0;
+            margin: 0;
+            margin-right: $pxInRem-20;
+            font-size: $pxInRem-16;
+
+            a {
+                text-decoration: underline;
+            }
+        }
+
+        .cookiesBarButton {
+            line-height: $cookiesBarHeight;
+            background-color: $cookiesButtonBackgroundColor;
+            font-weight: bold;
+            padding: 0 1rem;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            position: relative;
+            @include transition (background-color $transition);
+
+            &:hover {
+                background-color: $cookiesButtonBackgroundHoverColor;
+            }
+
+            &:after {
+                content: " ";
+                font-size: 0;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                @include box-shadow(0 0 0 0 white);
+                @include transition (box-shadow $transition);
+            }
+
+            &:active {
+
+
+                &:after {
+                    @include box-shadow(inset 0 0 $pxInRem-16 rgba(0, 0, 0, 0.6));
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 40.625rem) {
+    .cookiesBar {
+        min-height: unset;
+
+        .cookiesBarInner {
+            p, a, button {
+            }
+
+            .cookiesBarText, .cookiesBarButton {
+            }
+
+            .cookiesBarText {
+                margin-right: $pxInRem-6;
+                margin-left: $pxInRem-6;
+                display: block;
+            }
+
+            .cookiesBarButton {
+                line-height: normal;
+                padding: $pxInRem-8 $pxInRem-14;
+            }
+        }
+    }
+}

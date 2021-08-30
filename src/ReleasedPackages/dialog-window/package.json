@@ -1,0 +1,37 @@
+{
+  "name": "@drozdik.m/dialog-window",
+  "version": "1.0.4",
+  "description": "Nice and easy-to-use dialog window",
+  "main": "dist/src/DialogWindow.js",
+  "typings": "dist/src/DialogWindow.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "compile": "sass --load-path=node_modules --load-path=../ module.scss dist/module.css && tsc",
+    "build": "npm update && npm update -D && npm run compile",
+    "test": "npm run build && node dist/tests/DialogWindow/DialogWindow.test.js",
+    "demo": "npm run compile && browserify dist/demo/script.js -o dist/demo/script.compiled.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Dialog",
+    "Window",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.5.0",
+    "@drozdik.m/web-unit-test": "^1.2.5"
+  },
+  "dependencies": {
+    "@drozdik.m/common-mixins": "^1.0.3",
+    "@drozdik.m/dimensions-helper": "^1.0.0",
+    "@drozdik.m/event": "^1.0.0",
+    "@drozdik.m/px-in-rem": "^1.0.1",
+    "@drozdik.m/window-events": "^1.1.1"
+  }
+}

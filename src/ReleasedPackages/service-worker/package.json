@@ -1,0 +1,29 @@
+{
+  "name": "@drozdik.m/service-worker",
+  "version": "1.1.5",
+  "description": "Intuitive and easy service worker selection",
+  "main": "dist/src/OfflineCacheWorker.js",
+  "typings": "dist/src/OfflineCacheWorker.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && tsc",
+    "test": "npm run build && node ./dist/tests/Libs.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "ServiceWorker",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "@drozdik.m/map": "^2.0.0",
+    "@drozdik.m/string-extensions": "^1.2.0",
+    "@drozdik.m/unit-test": "^1.5.0"
+  }
+}

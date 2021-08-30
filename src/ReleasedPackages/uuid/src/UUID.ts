@@ -1,0 +1,39 @@
+﻿
+ 
+export class UUID
+{
+    private uuidString: string;
+
+    constructor()
+    {
+        this.uuidString = UUID.GenerateUUID();
+    }
+
+    private static GenerateUUID(): string
+    {
+        //Source: https://www.w3resource.com/javascript-exercises/javascript-math-exercise-23.php
+        let dt = new Date().getTime();
+        const uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c)
+        {
+            const r = (dt + Math.random() * 16) % 16 | 0;
+            dt = Math.floor(dt / 16);
+            return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+        });
+        return uuid;
+    }
+
+    public static Create(): UUID
+    {
+        return new UUID();
+    }
+
+    public ToString(): string
+    {
+        return this.uuidString;
+    }
+
+    public toString(): string
+    {
+        return this.ToString();
+    }
+}

@@ -1,0 +1,5 @@
+﻿@import "@drozdik.m/common-mixins/_module.scss";
+
+@include export("cookies-bar") {
+    @import "src/CookiesBar";
+}

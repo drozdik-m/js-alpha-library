@@ -1,0 +1,115 @@
+﻿@import "@drozdik.m/common-mixins/_module.scss";
+@import "@drozdik.m/px-in-rem/_module.scss";
+
+//$mainTheme: #537bc3 !default;
+//$mainThemeHover: #3e5c91 !default;
+
+$transition: 250ms cubic-bezier(0.215, 0.61, 0.355, 1) !default;
+
+
+//--------------------------------------------------
+//---------NORMAL DIALOG WINDOW---------------------
+//--------------------------------------------------
+.dialogWindow {
+    position: fixed;
+    z-index: 201;
+    display: none;
+    opacity: 0;
+    text-align: center;
+    padding: 1rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    @include transition (opacity $transition, transform $transition);
+    @include transform (scale(1.1));
+
+    //BLACK BACKGROUND COVER
+    .dialogBackground {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 0;
+        z-index: 205;
+    }
+    //MAIN DIALOG CONTENT
+    .dialogContent {
+        max-width: 55rem;
+        padding: 1rem;
+        padding-top: 2rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 206;
+        text-align: center;
+        background-color: white;
+        overflow-y: auto;
+
+        .dialogWindowHeading {
+            font-size: $pxInRem-20;
+            text-align: center;
+            display: block;
+            font-weight: bold;
+        }
+    }
+    //OPENED
+    &.opened {
+        @include transform (scale(1));
+        opacity: 1;
+    }
+    //SCREEN OVERFLOW
+    &.dialogScreenOverflow {
+        .dialogContent {
+        }
+    }
+    //CROSS
+    .dialogCross {
+        position: absolute;
+        top: $pxInRem-8;
+        right: $pxInRem-8;
+        font-size: 0;
+        height: 1.5rem;
+        width: 1.5rem;
+        cursor: pointer;
+
+        .line {
+            $lineWidth: 4px;
+            width: $lineWidth;
+            height: 100%;
+            @include transition (background-color $transition, transform $transition);
+            background-color: #383838;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -$lineWidth / 2;
+
+
+            &.line1 {
+                @include transform (rotate(45deg));
+            }
+
+            &.line2 {
+                @include transform (rotate(-45deg));
+            }
+        }
+
+        &:hover {
+            .line {
+                background-color: black;
+
+                &.line1 {
+                    @include transform (rotate(135deg));
+                }
+
+                &.line2 {
+                    @include transform (rotate(45deg));
+                }
+            }
+        }
+    }
+}

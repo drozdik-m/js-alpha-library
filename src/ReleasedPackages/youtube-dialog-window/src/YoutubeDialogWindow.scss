@@ -1,0 +1,39 @@
+﻿@import "@drozdik.m/common-mixins/_module.scss";
+@import "@drozdik.m/px-in-rem/_module.scss";
+@import "@drozdik.m/dialog-window/module.scss";
+
+$transition: 250ms cubic-bezier(0.215, 0.61, 0.355, 1) !default;
+
+$commonGreen: #0a7b12 !default;
+$commonGreenHover: #09470d !default;
+
+$commonYellow: #f1c817 !default;
+$commonYellowHover: #aaa100 !default;
+
+$commonRed: #b00606 !default;
+$commonRedHover: #6b0505 !default;
+
+$commonGrey: #212121 !default;
+$commonGreyHover: #060606 !default;
+
+
+//--------------------------------------------------
+//---------YOUTUBE DIALOG WINDOW--------------------
+//--------------------------------------------------
+#youtubeDialogWindow {
+    background-color: rgba(0, 0, 0, 0);
+    
+
+    .dialogCross {
+        .line{
+            background-color: white;
+        }
+    }
+
+    #youtubeDialogWindowPlayer {
+        margin-top: 1rem;
+        width: 100%;
+        height: 26rem;
+    }
+}
+

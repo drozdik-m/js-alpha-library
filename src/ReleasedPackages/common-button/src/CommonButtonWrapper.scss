@@ -1,0 +1,24 @@
+﻿
+.commonButtonWrapper {
+    text-align: center;
+    margin: 0.5rem 0.4375rem;
+
+    //ALIGNS
+    &.alignLeft {
+        margin-left: 0;
+        text-align: left;
+
+        .commonButton {
+            margin-left: 0;
+        }
+    }
+
+    &.alignRight {
+        margin-right: 0;
+        text-align: right;
+
+        .commonButton {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@drozdik.m/string-extensions",
+  "version": "1.5.0",
+  "description": "Method extensions for string",
+  "main": "dist/src/AllExtensions.js",
+  "typings": "dist/src/AllExtensions.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && tsc",
+    "test": "npm run build && node dist/tests/StringExtensions.test.js"
+  },
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "String",
+    "Extensions",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.5.0"
+  },
+  "dependencies": {}
+}

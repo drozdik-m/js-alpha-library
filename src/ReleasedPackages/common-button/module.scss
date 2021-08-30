@@ -1,0 +1,10 @@
+﻿@import "src/CommonButton.scss";
+@import "src/CommonButtonWrapper.scss";
+@import "src/_CommonButtonScheme.scss";
+
+$commonGrey: #212121 !default;
+$commonGreyHover: #060606 !default;
+
+.commonButton {
+    @include commonButtonScheme(white, $commonGrey, white, $commonGreyHover);
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@drozdik.m/cookies-bar",
+  "version": "1.0.3",
+  "description": "Simple efficient cookie controller for handling cookies permissions.",
+  "main": "dist/src/CookiesBar.js",
+  "typings": "dist/src/CookiesBar.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "compile": "sass --load-path=node_modules --load-path=../ module.scss dist/module.css && tsc",
+    "build": "npm update && npm update -D && npm run compile",
+    "test": "npm run build && node dist/tests/CookiesBar/CookiesBar.test.js",
+    "demo": "npm run compile && browserify dist/demo/script.js -o dist/demo/script.compiled.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Cookie",
+    "Controller",
+    "Permission",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.2.1",
+    "@drozdik.m/web-unit-test": "^1.2.5"
+  },
+  "dependencies": {
+    "@drozdik.m/common-mixins": "^1.0.3",
+    "@drozdik.m/cookies-controller": "^1.0.0",
+    "@drozdik.m/px-in-rem": "^1.0.1"
+  }
+}

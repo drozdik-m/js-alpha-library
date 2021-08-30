@@ -1,0 +1,33 @@
+{
+  "name": "@drozdik.m/ajax",
+  "version": "1.2.0",
+  "description": "Ajax queue with events and pipelines",
+  "main": "dist/src/Ajax.js",
+  "typings": "dist/src/Ajax.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && tsc",
+    "test": "npm run build && node dist/tests/AjaxRequest.test.js && node dist/tests/Ajax/Ajax.test.js"
+  },
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Ajax",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "dependencies": {
+    "@drozdik.m/event": "^1.0.0",
+    "@drozdik.m/pipeline": "^1.1.0",
+    "@drozdik.m/queue": "^1.1.0"
+  },
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.5.0",
+    "@drozdik.m/web-unit-test": "^1.2.5",
+    "@types/node": "^12.12.25"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@drozdik.m/stack",
+  "version": "1.0.1",
+  "description": "Classic implementation of stack.",
+  "main": "dist/src/Stack.js",
+  "typings": "dist/src/Stack.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && tsc",
+    "test": "npm run build && node dist/tests/Stack.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Stack",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "dependencies": {
+    "@drozdik.m/common-interfaces": "^1.0.2"
+  },
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.0.1"
+  }
+}

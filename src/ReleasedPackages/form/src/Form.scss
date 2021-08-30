@@ -1,0 +1,93 @@
+﻿@import "@drozdik.m/common-mixins/_module.scss";
+@import "@drozdik.m/px-in-rem/_module.scss";
+
+$commonGreen: #0a7b12 !default;
+$commonRed: #b00606 !default;
+
+.form {
+    text-align: left;
+
+    select, textarea, [type="text"], [type="number"], [type="file"], label {
+        box-sizing: border-box;
+        outline: none;
+        text-align: left;
+        display: block;
+
+        -webkit-autofill {
+        }
+    }
+
+    select {
+        background-image: none !important;
+    }
+
+    textarea {
+        max-width: 100%;
+        max-height: 20rem;
+        min-height: 10rem;
+        resize: vertical;
+    }
+
+    label {
+        padding-bottom: $pxInRem-3;
+    }
+    //BLOCKS
+    .formBlock {
+        margin: $pxInRem-9 0;
+        &.recaptchaFormBlock{
+            text-align: center;
+            >div{
+                text-align: left;
+                display: inline-block;
+            }
+        }
+    }
+
+    .checkboxFormBlock {
+        input, label {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        label {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    //VALIDATION
+    .validInput {
+        border-color: $commonGreen;
+
+        &:hover {
+            border-color: $commonGreen;
+        }
+
+        &:focus {
+            border-color: $commonGreen;
+        }
+    }
+
+    .invalidInput {
+        border-color: $commonRed;
+
+        &:hover {
+            border-color: $commonRed;
+        }
+
+        &:focus {
+            border-color: $commonRed;
+        }
+    }
+
+    .errorList {
+        text-align: left;
+        margin-left: $pxInRem-20;
+
+        li {
+            margin: $pxInRem-6 0;
+            list-style-type: disc;
+            color: red;
+        }
+    }
+}
+

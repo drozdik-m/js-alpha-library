@@ -1,0 +1,37 @@
+{
+  "name": "@drozdik.m/common-dialog-window",
+  "version": "1.0.1",
+  "description": "Nice and easy-to-use list of common info dialog windows",
+  "main": "dist/src/CommonDialogWindow.js",
+  "typings": "dist/src/CommonDialogWindow.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "compile": "sass --load-path=node_modules --load-path=../ module.scss dist/module.css && tsc",
+    "build": "npm update && npm update -D && npm run compile",
+    "test": "npm run build && node dist/tests/CommonDialogWindow/CommonDialogWindow.test.js",
+    "demo": "npm run compile && browserify dist/demo/script.js -o dist/demo/script.compiled.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Dialog",
+    "Common",
+    "Confirm",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.5.0",
+    "@drozdik.m/web-unit-test": "^1.2.5"
+  },
+  "dependencies": {
+    "@drozdik.m/common-button": "^1.0.2",
+    "@drozdik.m/common-mixins": "^1.0.3",
+    "@drozdik.m/dialog-window": "^1.0.4",
+    "@drozdik.m/px-in-rem": "^1.0.1"
+  }
+}

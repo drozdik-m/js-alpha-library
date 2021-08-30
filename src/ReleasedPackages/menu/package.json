@@ -1,0 +1,35 @@
+{
+  "name": "@drozdik.m/menu",
+  "version": "1.0.0",
+  "description": "Package with helpers for the page menu",
+  "main": "dist/src/Menu.js",
+  "typings": "dist/src/Menu.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && npm run compile",
+    "compile": "sass --load-path=node_modules --load-path=../ module.scss dist/module.css && tsc",
+    "test": "npm run build && node dist/tests/Menu/Menu.test.js",
+    "demo": "npm run compile && browserify dist/demo/script.js -o dist/demo/script.compiled.js"
+  },
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Menu",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.5.0",
+    "@drozdik.m/web-unit-test": "^1.2.5"
+  },
+  "dependencies": {
+    "@drozdik.m/common-mixins": "^1.0.3",
+    "@drozdik.m/event": "^1.0.0",
+    "@drozdik.m/px-in-rem": "^1.0.1",
+    "@drozdik.m/window-events": "^1.1.1"
+  }
+}

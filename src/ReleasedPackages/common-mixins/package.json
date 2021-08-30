@@ -1,0 +1,24 @@
+{
+  "name": "@drozdik.m/common-mixins",
+  "version": "1.0.5",
+  "description": "Library of commonly used mixins in scss code",
+  "main": "_module.scss",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && sass src:dist/src",
+    "test": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Common mixins",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@drozdik.m/window-events",
+  "version": "1.1.2",
+  "description": "Simple interface for window event handling",
+  "main": "dist/src/WindowEvents.js",
+  "typings": "dist/src/WindowEvents.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "compile": "tsc",
+    "build": "npm update && npm update -D && npm run compile",
+    "test": "npm run build && node dist/tests/WindowEvents/WindowEvents.test.js",
+    "demo": "browserify dist/demo/script.js -o dist/demo/script.compiled.js"
+  },
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Events",
+    "Window",
+    "Resize",
+    "Scroll",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.5.0",
+    "@drozdik.m/web-unit-test": "^1.2.5"
+  },
+  "dependencies": {
+    "@drozdik.m/dimensions-helper": "^1.0.0",
+    "@drozdik.m/event": "^1.0.0"
+  }
+}

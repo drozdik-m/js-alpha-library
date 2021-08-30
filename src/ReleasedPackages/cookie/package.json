@@ -1,0 +1,30 @@
+{
+  "name": "@drozdik.m/cookie",
+  "version": "1.0.0",
+  "description": "Simple efficient cookie object with caching mechanism.",
+  "main": "dist/src/Cookie.js",
+  "typings": "dist/src/Cookie.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "compile": "tsc",
+    "build": "npm update && npm update -D && npm run compile",
+    "test": "npm run build && node dist/tests/Basic/Cookie.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Cookie",
+    "Browser",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.2.1",
+    "@drozdik.m/web-unit-test": "^1.0.0"
+  },
+  "dependencies": {}
+}

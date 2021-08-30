@@ -1,0 +1,12 @@
+{
+  "name": "@drozdik.m/array-extensions",
+  "version": "1.0.0",
+  "description": "Extended functions for JavaScript/TypeScript array.",
+  "main": "dist/src/AllArrayExtensions.js",
+  "typings": "src/ArrayExtensionsInterfaces.d.ts",
+  "scripts": {
+    "test": "node dist/tests/ArrayExtensions_tests.js"
+  },
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT"
+}

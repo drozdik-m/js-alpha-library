@@ -1,0 +1,33 @@
+{
+  "name": "@drozdik.m/loading-animation",
+  "version": "1.2.1",
+  "description": "Simple loading animation",
+  "main": "dist/src/LoadingAnimation.js",
+  "typings": "dist/src/LoadingAnimation.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "compile": "tsc && sass --load-path=node_modules --load-path=../ module.scss dist/module.css",
+    "build": "npm update && npm update -D && npm run compile",
+    "test": "npm run build && node dist/tests/LoadingAnimation/LoadingAnimation.test.js",
+    "demo": "npm run compile && browserify dist/demo/script.js -o dist/demo/script.compiled.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "LoadingAnimation",
+    "Loading",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.5.0",
+    "@drozdik.m/web-unit-test": "^1.2.5"
+  },
+  "dependencies": {
+    "@drozdik.m/common-mixins": "^1.0.4"
+  }
+}

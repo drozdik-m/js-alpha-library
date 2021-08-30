@@ -1,0 +1,31 @@
+{
+  "name": "@drozdik.m/rem",
+  "version": "1.0.0",
+  "description": "Package for extracting rem size",
+  "main": "dist/src/Rem.js",
+  "typings": "dist/src/Rem.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && npm run compile",
+    "compile": "tsc",
+    "test": "npm run build && node dist/tests/Rem/Rem.test.js"
+  },
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Rem",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.5.0",
+    "@drozdik.m/web-unit-test": "^1.2.5"
+  },
+  "dependencies": {
+    "@drozdik.m/window-events": "^1.1.1"
+  }
+}

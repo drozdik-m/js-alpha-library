@@ -1,0 +1,7 @@
+﻿@import "@drozdik.m/common-mixins/_module.scss";
+@import "./src/_CommonFormInputs.scss";
+
+@include export("form") {
+    @import "src/Form";
+    @import "src/CommonForm.scss";
+}

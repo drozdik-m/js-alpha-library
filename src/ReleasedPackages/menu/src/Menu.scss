@@ -1,0 +1,279 @@
+﻿@import "../node_modules/@drozdik.m/common-mixins/_module.scss";
+@import "../node_modules/@drozdik.m/px-in-rem/_module.scss";
+
+$desktopMenuHeight: 3.5rem !default;
+$mobileMenuHeight: 2.5rem !default;
+
+$mainTheme: #537bc3 !default;
+$mainThemeHover: #3e5c91 !default;
+
+$commonGrey: #212121 !default;
+
+$transition: 250ms cubic-bezier(0.215, 0.61, 0.355, 1) !default;
+
+//--------------------------------------------------
+//----------GENERAL---------------------------------
+//--------------------------------------------------
+.menuWrapper {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 210;
+    background-color: white;
+
+
+    .menu {
+        -webkit-backface-visibility: hidden;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+
+
+//--------------------------------------------------
+//----------DESKTOP MENU----------------------------
+//--------------------------------------------------
+.menuWrapper.desktopMenu {
+    height: $desktopMenuHeight;
+    font-size: 0;
+    text-align: right;
+
+    //INNER MENU <nav>
+    .menu {
+        position: relative;
+
+        //MENU LOGO
+        .menuLogo {
+            float: left;
+            height: $desktopMenuHeight;
+            padding-right: $pxInRem-18;
+
+            img, span {
+                display: inline-block;
+                vertical-align: middle;
+                text-align: left;
+            }
+
+            img {
+                width: auto;
+                $topBottomSpace: 0.5rem;
+                height: $desktopMenuHeight - (2 * $topBottomSpace);
+                margin: $topBottomSpace 0;
+                margin-right: $pxInRem-19;
+            }
+
+            span {
+                position: relative;
+                left: 0;
+                height: $desktopMenuHeight;
+                line-height: $desktopMenuHeight;
+                font-size: $pxInRem-20;
+                color: $commonGrey;
+                @include transition(left $transition);
+            }
+
+            &:hover {
+                span {
+                    left: $pxInRem-8;
+                }
+            }
+        }
+
+        //LIST <ul>
+        ul {
+            display: inline-block;
+
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                text-align: center;
+                @include transition (background-color $transition);
+
+                a {
+                    display: block;
+                    font-size: $pxInRem-18;
+                    height: $desktopMenuHeight;
+                    line-height: $desktopMenuHeight;
+                    padding: 0 $pxInRem-18;
+                    color: $commonGrey;
+                    @include transition (color $transition);
+                }
+
+                &:hover {
+                    background-color: $commonGrey;
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        //HAMBURGER
+        .hamburger {
+            display: none;
+        }
+    }
+}
+
+
+//--------------------------------------------------
+//----------MOBILE MENU-----------------------------
+//--------------------------------------------------
+.menuWrapper.mobileMenu {
+    height: $mobileMenuHeight;
+    font-size: 0;
+    text-align: left;
+    //INNER MENU <nav>
+    .menu {
+        position: relative;
+        height: 100%;
+        //MENU LOGO
+        .menuLogo {
+            position: absolute;
+            left: $pxInRem-14;
+            top: 0;
+            bottom: 0;
+            height: $mobileMenuHeight;
+            padding-right: $pxInRem-18;
+
+            img, span {
+                display: inline-block;
+                vertical-align: middle;
+                text-align: left;
+            }
+
+            img {
+                width: auto;
+                $topBottomSpace: 0.25rem;
+                height: $mobileMenuHeight - (2 * $topBottomSpace);
+                margin: $topBottomSpace 0;
+                margin-right: $pxInRem-12;
+            }
+
+            span {
+                position: relative;
+                left: 0;
+                height: $mobileMenuHeight;
+                line-height: $mobileMenuHeight;
+                font-size: $pxInRem-17;
+                color: $commonGrey;
+                @include transition(left $transition);
+            }
+
+            &:hover {
+                span {
+                    left: $pxInRem-8;
+                }
+            }
+        }
+        //LIST <ul>
+        ul {
+            display: block;
+            position: absolute;
+            top: $mobileMenuHeight;
+            left: 0;
+            right: 0;
+            max-height: 0;
+            @include transition (max-height $transition);
+            overflow: hidden;
+            background-color: white;
+
+            //border-bottom: $pxInRem-1 solid $commonGrey;
+            @include box-shadow(0 $pxInRem-3 $pxInRem-2 0px rgba(0, 0, 0, 0.5));
+
+            li {
+                @include transition (background-color $transition);
+
+                a {
+                    display: block;
+                    font-size: $pxInRem-16;
+                    padding: 0.5rem 0 0.5rem 1.5rem;
+                    color: $commonGrey;
+                    @include transition (color $transition);
+                }
+
+                &:hover {
+                    background-color: $commonGrey;
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
+        //HAMBURGER
+        .hamburger {
+        }
+    }
+}
+
+//--------------------------------------------------
+//----------BURGER----------------------------------
+//--------------------------------------------------
+$burgerWidth: $pxInRem-30;
+$burgerHeight: $pxInRem-20;
+$burgerLineHeight: $pxInRem-4;
+
+#menu.mobileMenu {
+    .hamburger {
+        width: $burgerWidth;
+        height: $burgerHeight;
+        position: absolute;
+        right: 1rem;
+        top: ($mobileMenuHeight / 2) - ($burgerHeight / 2);
+        @include transform (rotate(0deg));
+        @include transition ($transition);
+        cursor: pointer;
+
+        span {
+            display: block;
+            position: absolute;
+            height: $burgerLineHeight;
+            width: 100%;
+            background: #373737;
+            opacity: 1;
+            left: 0;
+            @include transform (rotate(0deg));
+            @include transition (250ms ease-in-out);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .child1 {
+            top: 0;
+        }
+
+        .child2, .child3 {
+            top: ($burgerHeight / 2) - ($burgerLineHeight / 2);
+        }
+
+        .child4 {
+            top: $burgerHeight - $burgerLineHeight;
+        }
+    }
+    //OPENED MENU
+    &.openMenu {
+        .hamburger {
+            .child2 {
+                @include transform (rotate(45deg));
+            }
+
+            .child3 {
+                @include transform (rotate(-45deg));
+            }
+
+            .child1, .child4 {
+                top: ($burgerHeight / 2) - ($burgerLineHeight / 2);
+                width: 0%;
+                left: 50%;
+            }
+        }
+    }
+}

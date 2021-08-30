@@ -1,0 +1,30 @@
+{
+  "name": "@drozdik.m/queue",
+  "version": "1.1.0",
+  "description": "Classic implementation of queue.",
+  "main": "dist/src/Queue.js",
+  "typings": "dist/src/Queue.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "build": "npm update && npm update -D && tsc",
+    "test": "npm run build && node dist/tests/Queue.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+  },
+  "keywords": [
+    "Queue",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "license": "MIT",
+  "dependencies": {
+    "@drozdik.m/common-interfaces": "^1.0.2",
+    "@drozdik.m/double-linked-list": "^1.0.2"
+  },
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.4.2"
+  }
+}
