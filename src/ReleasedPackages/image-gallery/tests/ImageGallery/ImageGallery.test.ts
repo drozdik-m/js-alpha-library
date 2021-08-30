@@ -2,7 +2,7 @@
 
 let browserTest = new BrowserTest(
     BrowserTest.GetHTMLPath(),
-    "dist/tests/Menu/MenuAgent.browser.js",
+    "dist/tests/ImageGallery/ImageGallery.browser.js",
     BrowserTest.GetCSSPath()
 );
 

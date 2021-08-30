@@ -1,4 +1,6 @@
-﻿@import "../node_modules/@drozdik.m/common-mixins/_module.scss";
+﻿@use "sass:math";
+
+@import "../node_modules/@drozdik.m/common-mixins/_module.scss";
 @import "../node_modules/@drozdik.m/px-in-rem/_module.scss";
 
 $desktopMenuHeight: 3.5rem !default;
@@ -224,7 +226,7 @@ $burgerLineHeight: $pxInRem-4;
         height: $burgerHeight;
         position: absolute;
         right: 1rem;
-        top: ($mobileMenuHeight / 2) - ($burgerHeight / 2);
+        top: math.div($mobileMenuHeight, 2) - math.div($burgerHeight, 2);
         @include transform (rotate(0deg));
         @include transition ($transition);
         cursor: pointer;
@@ -251,7 +253,7 @@ $burgerLineHeight: $pxInRem-4;
         }
 
         .child2, .child3 {
-            top: ($burgerHeight / 2) - ($burgerLineHeight / 2);
+            top: math.div($burgerHeight, 2) - math.div($burgerLineHeight, 2);
         }
 
         .child4 {
@@ -270,7 +272,7 @@ $burgerLineHeight: $pxInRem-4;
             }
 
             .child1, .child4 {
-                top: ($burgerHeight / 2) - ($burgerLineHeight / 2);
+                top: ($burgerHeight, 2) - ($burgerLineHeight, 2);
                 width: 0%;
                 left: 50%;
             }

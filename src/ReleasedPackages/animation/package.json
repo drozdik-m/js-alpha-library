@@ -28,6 +28,6 @@
   },
   "dependencies": {
     "@drozdik.m/event": "^1.0.0",
-    "@drozdik.m/lerp": "^1.0.0"
+    "@drozdik.m/lerp": "^1.0.1"
   }
 }

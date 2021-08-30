@@ -1,4 +1,6 @@
-﻿@import "@drozdik.m/common-mixins/_module.scss";
+﻿@use "sass:math";
+
+@import "@drozdik.m/common-mixins/_module.scss";
 @import "@drozdik.m/px-in-rem/_module.scss";
 
 //$mainTheme: #537bc3 !default;
@@ -86,7 +88,7 @@ $transition: 250ms cubic-bezier(0.215, 0.61, 0.355, 1) !default;
             position: absolute;
             top: 0;
             left: 50%;
-            margin-left: -$lineWidth / 2;
+            margin-left: math.div(-$lineWidth, 2);
 
 
             &.line1 {

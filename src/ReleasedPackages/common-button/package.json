@@ -1,6 +1,6 @@
 {
   "name": "@drozdik.m/common-button",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple button style",
   "main": "dist/Module.js",
   "typings": "dist/Module.d.ts",

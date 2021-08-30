@@ -1,4 +1,6 @@
-﻿@import "../node_modules/@drozdik.m/common-mixins/_module.scss";
+﻿@use "sass:math";
+
+@import "../node_modules/@drozdik.m/common-mixins/_module.scss";
 @import "../node_modules/@drozdik.m/px-in-rem/_module.scss";
 
 $commonGrey: #212121 !default;
@@ -143,7 +145,7 @@ $notActiveOpacity: 0.3;
             height: $dimensions;
             position: absolute;
             top: 50%;
-            margin-top: -($dimensions / 2);
+            margin-top: -(math.div($dimensions, 2));
         }
     }
 
