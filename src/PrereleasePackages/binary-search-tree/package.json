@@ -7,6 +7,6 @@
   "scripts": {
     "test": "node dist/tests/BinarySearchTree_tests.js"
   },
-  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "author": "Martin Drozdík <ja@martin-drozdik.cz> (http://martin-drozdik.cz)",
   "license": "MIT"
 }

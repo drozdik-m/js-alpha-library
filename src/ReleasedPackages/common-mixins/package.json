@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+    "url": "https://github.com/drozdik-m/js-alpha-library"
   },
   "keywords": [
     "Common mixins",
     "JavaScript",
     "TypeScript"
   ],
-  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "author": "Martin Drozdík <ja@martin-drozdik.cz> (http://martin-drozdik.cz)",
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {}

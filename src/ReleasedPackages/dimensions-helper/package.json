@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+    "url": "https://github.com/drozdik-m/js-alpha-library"
   },
   "keywords": [
     "Dimensions",
@@ -22,7 +22,7 @@
     "JavaScript",
     "TypeScript"
   ],
-  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "author": "Martin Drozdík <ja@martin-drozdik.cz> (http://martin-drozdik.cz)",
   "license": "MIT",
   "devDependencies": {
     "@drozdik.m/unit-test": "^1.5.0",

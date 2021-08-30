@@ -9,11 +9,11 @@
     "build": "npm update && npm update -D && tsc",
     "test": "npm run build && node dist/tests/Pipeline.test.js"
   },
-  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "author": "Martin Drozdík <ja@martin-drozdik.cz> (http://martin-drozdik.cz)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+    "url": "https://github.com/drozdik-m/js-alpha-library"
   },
   "keywords": [
     "Pipeline",

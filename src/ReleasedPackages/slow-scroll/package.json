@@ -11,11 +11,11 @@
     "test": "npm run build && node dist/tests/SlowScroll/SlowScroll.test.js",
     "demo": "npm run compile && browserify dist/demo/script.js -o dist/demo/script.compiled.js"
   },
-  "author": "Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)",
+  "author": "Martin Drozdík <ja@martin-drozdik.cz> (http://martin-drozdik.cz)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://opticallo.visualstudio.com/_git/TheAlphaLibrary"
+    "url": "https://github.com/drozdik-m/js-alpha-library"
   },
   "keywords": [
     "SlowScroll",
