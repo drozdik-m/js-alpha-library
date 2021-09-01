@@ -1,6 +1,6 @@
 {
   "name": "@drozdik.m/menu",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Package with helpers for the page menu",
   "main": "dist/src/Menu.js",
   "typings": "dist/src/Menu.d.ts",

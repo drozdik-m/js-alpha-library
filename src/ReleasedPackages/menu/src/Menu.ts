@@ -46,6 +46,33 @@ export class Menu
     }
 
     //--------------------------------------------------
+    //---------GETTERS----------------------------------
+    //--------------------------------------------------
+    /**
+     * Tells if the menu is opened
+     * */
+    IsOpen()
+    {
+        return this.menuOpen
+    }
+
+    /**
+     * Tells if the menu is in a desktop mode
+     * */
+    IsDesktop()
+    {
+        return this.isDesktopMenu
+    }
+
+    /**
+     * Tells if the menu is in a mobile mode
+     * */
+    IsMobile()
+    {
+        return !this.isDesktopMenu
+    }
+
+    //--------------------------------------------------
     //---------OPEN/CLOSE-------------------------------
     //--------------------------------------------------
     /**
