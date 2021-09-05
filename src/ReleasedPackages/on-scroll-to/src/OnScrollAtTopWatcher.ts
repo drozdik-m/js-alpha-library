@@ -1,6 +1,6 @@
 ﻿import { WindowEvents, ScrollArgs } from "@drozdik.m/window-events";
 import { OnScrollWatcherArgs } from "../args/OnScrollWatcherArgs";
-import { OnScrollWatcher } from "./OnScrollTo";
+import { OnScrollWatcher } from "./OnScrollWatcher";
 
 /**
  * Element watcher triggering callback when the element is above or at the top of the screen

@@ -1,7 +1,4 @@
-﻿import { OnScrollAtBottomWatcher } from "../src/OnScrollAtBottomWatcher";
-import { OnScrollAtBottomWatcherOnce } from "../src/OnScrollAtBottomWatcherOnce";
-import { OnScrollAtTopWatcher } from "../src/OnScrollAtTopWatcher";
-import { OnScrollAtTopWatcherOnce } from "../src/OnScrollAtTopWatcherOnce";
+﻿import { OnScrollAtBottomWatcher, OnScrollAtBottomWatcherOnce, OnScrollAtTopWatcher, OnScrollAtTopWatcherOnce } from "../src/OnScrollTo";
 
 
 document.addEventListener("DOMContentLoaded", function ()

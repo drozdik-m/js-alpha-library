@@ -1,6 +1,6 @@
 {
   "name": "@drozdik.m/on-scroll-to",
-  "version": "1.0.0",
+  "version": "1.1.3",
   "description": "Package for detecting when the window scrolls to an element.",
   "main": "dist/src/OnScrollTo.js",
   "typings": "dist/src/OnScrollTo.d.ts",
