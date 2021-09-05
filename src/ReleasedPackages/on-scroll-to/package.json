@@ -1,0 +1,35 @@
+{
+  "name": "@drozdik.m/on-scroll-to",
+  "version": "1.0.0",
+  "description": "Package for detecting when the window scrolls to an element.",
+  "main": "dist/src/OnScrollTo.js",
+  "typings": "dist/src/OnScrollTo.d.ts",
+  "scripts": {
+    "clear": "rmdir /S /Q \"dist\"",
+    "compile": "tsc",
+    "build": "npm update && npm update -D && tsc",
+    "test": "npm run build && node dist/tests/OnScrollTo/OnScrollTo.test.js",
+    "demo": "npm run compile && browserify dist/demo/script.js -o dist/demo/script.compiled.js"
+  },
+  "author": "Martin Drozdík <ja@martin-drozdik.cz> (http://martin-drozdik.cz)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drozdik-m/js-alpha-library"
+  },
+  "keywords": [
+    "OnScrollTo",
+    "ScrollDetection",
+    "Scroll",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "devDependencies": {
+    "@drozdik.m/unit-test": "^1.5.0",
+    "@drozdik.m/web-unit-test": "^1.2.5"
+  },
+  "dependencies": {
+    "@drozdik.m/event": "^1.0.0",
+    "@drozdik.m/window-events": "^1.1.2"
+  }
+}
