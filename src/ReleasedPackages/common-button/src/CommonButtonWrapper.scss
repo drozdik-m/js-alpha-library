@@ -2,7 +2,6 @@
 .commonButtonWrapper {
     text-align: center;
     margin: 0.5rem 0.4375rem;
-
     //ALIGNS
     &.alignLeft {
         margin-left: 0;
@@ -20,5 +19,9 @@
         .commonButton {
             margin-right: 0;
         }
+    }
+
+    &.alignCenter {
+        text-align: center;
     }
 }
