@@ -1,6 +1,6 @@
 {
   "name": "@drozdik.m/common-mixins",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Library of commonly used mixins in scss code",
   "main": "_module.scss",
   "scripts": {

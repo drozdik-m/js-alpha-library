@@ -1,4 +1,5 @@
-﻿@mixin font-face ($fontName, $fontFileName, $path, $weight: normal, $style: normal) {
+﻿
+@mixin font-face ($fontName, $fontFileName, $path, $weight: normal, $style: normal) {
 
     $fontFilePath: $path + $fontFileName;
 
@@ -11,6 +12,7 @@
 	 	     url($fontFilePath + ".svg#" + $fontFileName) format("svg");
 	    font-weight: $weight;
 	    font-style: $style;
+		font-display: swap;
     }
 
 }
