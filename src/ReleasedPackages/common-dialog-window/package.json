@@ -1,6 +1,6 @@
 {
   "name": "@drozdik.m/common-dialog-window",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Nice and easy-to-use list of common info dialog windows",
   "main": "dist/src/CommonDialogWindow.js",
   "typings": "dist/src/CommonDialogWindow.d.ts",

@@ -46,7 +46,7 @@ $commonGreyHover: #060606 !default;
             }
         }
 
-        @import "../node_modules/@drozdik.m/common-button/module.scss";
+        @import "@drozdik.m/common-button/module.scss";
 
         .commonButton {
             &.commonButtonGreen {
