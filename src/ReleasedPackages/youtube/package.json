@@ -1,6 +1,6 @@
 {
   "name": "@drozdik.m/youtube",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Very easy and intuitive YouTube iframe player",
   "main": "dist/src/YoutubePlayer.js",
   "typings": "dist/src/YoutubePlayer.d.ts",
