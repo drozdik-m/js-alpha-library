@@ -1,6 +1,6 @@
 {
   "name": "@drozdik.m/bonsai-async-response-protocol",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Protocol parser named Bonsai Async Response Protocol",
   "main": "dist/src/BonsaiAsyncResponseProtocolMessage.js",
   "typings": "dist/src/BonsaiAsyncResponseProtocolMessage.d.ts",

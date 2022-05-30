@@ -54,6 +54,9 @@ export class YoutubePlayer
     //State
     state: YoutubePlayerState = YoutubePlayerState.NotReady;
 
+    //Player vars
+    playerVars: object;
+
     //--------------------------------------------------
     //---------CONSTRUCTOR------------------------------
     //--------------------------------------------------
@@ -62,11 +65,12 @@ export class YoutubePlayer
      * @param playerId Target element ID
      * @param startingVideoId Starting video ID
      */
-    constructor(playerId: string, startingVideoId = "8tPnX7OPo0Q")
+    constructor(playerId: string, startingVideoId = "8tPnX7OPo0Q", playerVars: object = {})
     {
         this.playerId = playerId;
         this.startingVideoId = startingVideoId;
         this.currentVideoId = this.startingVideoId;
+        this.playerVars = playerVars;
 
         //Check element existance
         const player = document.getElementById(this.playerId);
@@ -96,6 +100,7 @@ export class YoutubePlayer
         this.youtubePlayer = new YT.Player(object.playerId, {
             host: 'https://www.youtube.com',
             videoId: object.startingVideoId,
+            playerVars: object.playerVars,
             events: {
                 "onReady": function ()
                 {
