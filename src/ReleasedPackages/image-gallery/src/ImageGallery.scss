@@ -1,7 +1,7 @@
 ﻿@use "sass:math";
 
-@import "../node_modules/@drozdik.m/common-mixins/_module.scss";
-@import "../node_modules/@drozdik.m/px-in-rem/_module.scss";
+@import "@drozdik.m/common-mixins/_module.scss";
+@import "@drozdik.m/px-in-rem/_module.scss";
 
 $commonGrey: #212121 !default;
 $transition: 250ms cubic-bezier(0.215, 0.61, 0.355, 1) !default;

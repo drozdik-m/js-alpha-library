@@ -1,6 +1,6 @@
 {
   "name": "@drozdik.m/image-gallery",
-  "version": "1.2.3",
+  "version": "1.2.5",
   "description": "Efficient native modal image gallery.",
   "main": "dist/src/ImageGallery.js",
   "typings": "dist/src/ImageGallery.d.ts",
