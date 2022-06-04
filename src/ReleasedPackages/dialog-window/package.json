@@ -1,6 +1,6 @@
 {
   "name": "@drozdik.m/dialog-window",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Nice and easy-to-use dialog window",
   "main": "dist/src/DialogWindow.js",
   "typings": "dist/src/DialogWindow.d.ts",

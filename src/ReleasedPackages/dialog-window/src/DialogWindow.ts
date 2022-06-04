@@ -56,22 +56,26 @@ export class DialogWindow
 
         //On click action
         let object = this;
-        document.querySelectorAll("[data-dialog-id=\"" + dialogId + "\"]").forEach(function (element: HTMLElement)
+        var dialogs = document.querySelectorAll("[data-dialog-id=\"" + dialogId + "\"]");
+        for (var i = 0; i < dialogs.length; i++)
         {
+            var element = dialogs[i];
             element.addEventListener("click", function ()
             {
                 object.Open();
             });
-        });
+        }
 
         //Dialog close action
-        this.dialogWrapper.querySelectorAll(".dialogClose").forEach(function (element: HTMLElement)
+        var closes = this.dialogWrapper.querySelectorAll(".dialogClose");
+        for (var i = 0; i < closes.length; i++)
         {
+            var element = closes[i];
             element.addEventListener("click", function ()
             {
                 object.Close();
             });
-        });
+        }
 
         //Dialog update
         WindowEvents.OnResize.Add(function ()
