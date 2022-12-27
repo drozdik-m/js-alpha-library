@@ -8,7 +8,6 @@ import { DefaultComparator } from "@drozdik.m/default-comparator";
  * Class for easy handling of comparators. If explicit comparator is set, automatic
  * recognition of IComparable interface is turned off (on by default). It can be also turned
  * off manually. The class starts with default comparator for primitive types.
- * @author Martin Drozdík <info@bonsai-development.cz> (http://bonsai-development.cz)
  * */
 export class ComparatorHandler<T> implements IClonable<ComparatorHandler<T>>, IDisposable
 {

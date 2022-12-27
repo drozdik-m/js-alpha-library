@@ -1,6 +1,6 @@
 {
   "name": "@drozdik.m/comparator-handler",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Class that handles comparators and makes it easy for programmer to compare objects or primitive types inside more complicated classes.",
   "main": "dist/src/ComparatorHandler.js",
   "typings": "dist/src/ComparatorHandler.d.ts",
