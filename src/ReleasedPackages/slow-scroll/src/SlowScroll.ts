@@ -71,6 +71,7 @@ export class SlowScroll
         animation.OnRender.Add(function (caller, args)
         {
             document.documentElement.scrollTop = args.Value();
+            document.body.scrollTop = args.Value();
         });
         animation.Start(document.documentElement.scrollTop, top - SlowScroll.offset);
 

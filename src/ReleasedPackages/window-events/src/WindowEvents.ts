@@ -84,8 +84,7 @@ export class WindowEvents
      * */
     static Height(): number
     {
-        return document.documentElement.clientHeight
-            || window.innerHeight
+        return window.innerHeight
             || document.body.clientHeight; 
     }
 
