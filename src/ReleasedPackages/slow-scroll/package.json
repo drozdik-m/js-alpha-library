@@ -1,6 +1,6 @@
 {
   "name": "@drozdik.m/slow-scroll",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Slow scroll handling",
   "main": "dist/src/SlowScroll.js",
   "typings": "dist/src/SlowScroll.d.ts",
