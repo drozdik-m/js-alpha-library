@@ -147,34 +147,3 @@ export class Animation
 
 
 }
-
-
-/*
-
- function Interpolate(from: number, to: number, lerp: ILerpFunction, callback: Function)
-{
-    //let interpolationValue = 0.01;
-    let targetVal = to;
-    let currentFrame = 0;
-    let duration = 1000;
-    let timeBetweenFrames = 10;
-
-    let animationFrame = function ()
-    {
-        //console.log("Frame: " + currentFrame);
-
-        currentFrame += timeBetweenFrames;
-        let interpolationValue = lerp(from, targetVal, currentFrame, duration);
-
-        //console.log("   value: " + interpolationValue);
-
-        if (currentFrame < duration)
-            setTimeout(animationFrame, timeBetweenFrames);
-        else
-            callback(interpolationValue);
-    }
-    animationFrame();
-}
-
- 
- */

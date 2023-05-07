@@ -1,6 +1,6 @@
 {
   "name": "@drozdik.m/uuid",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Object for generating uuid",
   "main": "dist/src/UUID.js",
   "typings": "dist/src/UUID.d.ts",
@@ -21,7 +21,10 @@
     "TypeScript"
   ],
   "devDependencies": {
-    "@drozdik.m/unit-test": "^1.5.0"
+    "@drozdik.m/unit-test": "^1.5.0",
+    "@types/uuid": "^9.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
 }

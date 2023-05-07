@@ -1,6 +1,6 @@
 {
   "name": "@drozdik.m/string-extensions",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Method extensions for string",
   "main": "dist/src/AllExtensions.js",
   "typings": "dist/src/AllExtensions.d.ts",
@@ -10,7 +10,6 @@
     "test": "npm run build && node dist/tests/StringExtensions.test.js"
   },
   "author": "Martin Drozdík <ja@martin-drozdik.cz> (http://martin-drozdik.cz)",
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/drozdik-m/js-alpha-library"

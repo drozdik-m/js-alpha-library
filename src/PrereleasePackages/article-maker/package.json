@@ -22,7 +22,6 @@
     "TypeScript"
   ],
   "author": "Martin Drozdík <ja@martin-drozdik.cz> (http://martin-drozdik.cz)",
-  "license": "MIT",
   "devDependencies": {
     "@drozdik.m/unit-test": "^1.2.1",
     "@drozdik.m/web-unit-test": "^1.0.0",
