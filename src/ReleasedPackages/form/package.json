@@ -1,9 +1,9 @@
 {
   "name": "@drozdik.m/form",
-  "version": "1.1.12",
+  "version": "1.1.13",
   "description": "Object for handling form and validation.",
-  "main": "dist/src/form.js",
-  "typings": "dist/src/form.d.ts",
+  "main": "dist/src/Form.js",
+  "typings": "dist/src/Form.d.ts",
   "scripts": {
     "clear": "rmdir /S /Q \"dist\"",
     "build": "npm update && npm update -D && npm run compile",

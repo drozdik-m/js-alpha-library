@@ -1,15 +1,15 @@
-﻿import { Form } from "../src/form";
+﻿import { Form } from "../src/Form";
 import { NativeFormInput } from "../inputs/NativeFormInput";
 import { CaptchaFormInput } from "../inputs/CaptchaFormInput";
 import { FormValidation_MustHaveValue } from "../validation/FormValidation_MustHaveValue";
 import { FormValidation_MustBeEmail } from "../validation/FormValidation_MustBeEmail";
 import { RecaptchaV2 } from "@drozdik.m/recaptcha";
-import { FormValidation_FileCountLimit } from "../validation/formValidation_FileCountLimit";
-import { FormValidation_FileSizeLimit } from "../validation/formValidation_FileSizeLimit";
-import { FormValidation_MaxLength } from "../validation/formValidation_MaxLength";
-import { FormValidation_RegExp } from "../validation/formValidation_RegExp";
-import { FormValidation_MustBeChecked } from "../validation/formValidation_MustBeChecked";
-import { FormValidation_MustHaveSameValueAs } from "../validation/formValidation_MustHaveSameValueAs";
+import { FormValidation_FileCountLimit } from "../validation/FormValidation_FileCountLimit";
+import { FormValidation_FileSizeLimit } from "../validation/FormValidation_FileSizeLimit";
+import { FormValidation_MaxLength } from "../validation/FormValidation_MaxLength";
+import { FormValidation_RegExp } from "../validation/FormValidation_RegExp";
+import { FormValidation_MustBeChecked } from "../validation/FormValidation_MustBeChecked";
+import { FormValidation_MustHaveSameValueAs } from "../validation/FormValidation_MustHaveSameValueAs";
 
 
 document.addEventListener("DOMContentLoaded", function ()

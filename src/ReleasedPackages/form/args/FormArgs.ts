@@ -1,6 +1,3 @@
-﻿
-export class FormArgs
+﻿export class FormArgs
 {
-
-    
 }

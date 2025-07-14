@@ -3,8 +3,6 @@ import { Map } from "@drozdik.m/map";
 import { Event } from "@drozdik.m/event";
 import { FormArgs } from "../args/FormArgs";
 
-
-
 export class Form
 {
     //--------------------------------------------------

@@ -7,7 +7,6 @@
     "removeComments": false,
     "preserveConstEnums": true,
     "sourceMap": false,
-    "noImplicitUseStrict": true,
     "outDir": "dist/",
     "declaration": true
   }

@@ -1,6 +1,6 @@
 ﻿import { BrowserTestAgent } from "@drozdik.m/web-unit-test";
 import { UnitTest, Assert } from "@drozdik.m/unit-test";
-import { Form } from "../../src/form";
+import { Form } from "../../src/Form";
 import { NativeFormInput } from "../../inputs/NativeFormInput";
 import { FormValidation_MustHaveValue } from "../../validation/FormValidation_MustHaveValue";
 

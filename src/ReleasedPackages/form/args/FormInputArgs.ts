@@ -1,5 +1,4 @@
-﻿
-export class FormInputArgs
+﻿export class FormInputArgs
 {
     private element: HTMLElement;
 
@@ -27,5 +26,4 @@ export class FormInputArgs
     {
         return this.element.id;
     }
-    
 }

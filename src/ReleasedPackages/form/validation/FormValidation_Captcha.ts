@@ -1,5 +1,4 @@
 ﻿import { FormInputValidation } from "./FormInputValidation";
-import { RecaptchaV2 } from "@drozdik.m/recaptcha";
 import { CaptchaFormInput } from "../inputs/CaptchaFormInput";
 
 declare var grecaptcha: any;
