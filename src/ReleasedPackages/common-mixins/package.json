@@ -1,11 +1,11 @@
 {
   "name": "@drozdik.m/common-mixins",
-  "version": "1.0.7",
+  "version": "1.2.1",
   "description": "Library of commonly used mixins in scss code",
   "main": "_module.scss",
   "scripts": {
     "clear": "rmdir /S /Q \"dist\"",
-    "build": "npm update && npm update -D && sass src:dist/src",
+    "build": "npm install && sass src:dist/src",
     "test": "npm run build"
   },
   "repository": {

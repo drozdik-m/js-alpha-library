@@ -1,11 +1,11 @@
 {
   "name": "@drozdik.m/px-in-rem",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Simple translator for pixels to rem",
   "main": "_module.scss",
   "scripts": {
     "clear": "rmdir /S /Q \"dist\"",
-    "build": "npm update && npm update -D",
+    "build": "npm install",
     "test": "npm run build"
   },
   "repository": {

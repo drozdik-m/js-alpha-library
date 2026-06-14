@@ -1,13 +1,13 @@
 {
   "name": "@drozdik.m/common-button",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Simple button style",
   "main": "dist/Module.js",
   "typings": "dist/Module.d.ts",
   "scripts": {
     "clear": "rmdir /S /Q \"dist\"",
     "compile": "sass --load-path=node_modules --load-path=../ module.scss dist/module.css",
-    "build": "npm update && npm update -D && npm run compile",
+    "build": "npm install && npm run compile",
     "test": "npm run build",
     "demo": "npm run compile"
   },
@@ -24,7 +24,7 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
-    "@drozdik.m/common-mixins": "^1.0.4",
-    "@drozdik.m/px-in-rem": "^1.0.0"
+    "@drozdik.m/common-mixins": "^1.2.1",
+    "@drozdik.m/px-in-rem": "^1.1.0"
   }
 }
